@@ -25,10 +25,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1778501c-59a9-4bb9-85fe-5f96ccfe556a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/resources/views/productDetials/productDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+    <list default="true" id="d3a7c40d-5fc6-4a88-8f12-a75ce0feffba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/products/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/products/products.php" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +182,21 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/routes/products" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+>>>>>>> origin/master
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -181,9 +204,15 @@
       <created>1600954040120</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1600954040120</updated>
       <workItem from="1600954041170" duration="3666000" />
       <workItem from="1600957757799" duration="760000" />
+=======
+      <updated>1600954047160</updated>
+      <workItem from="1600954048192" duration="2503000" />
+      <workItem from="1600956648979" duration="1822000" />
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
@@ -213,11 +242,14 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+<<<<<<< HEAD
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="317" width="424" height="486" key="FileChooserDialogImpl" timestamp="1600957755084">
       <screen x="0" y="38" width="1920" height="1042" />
     </state>
     <state x="743" y="317" width="424" height="486" key="FileChooserDialogImpl/0.38.1920.1042@0.38.1920.1042" timestamp="1600957755084" />
+=======
+>>>>>>> origin/master
   </component>
 </project>
