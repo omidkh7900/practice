@@ -16,10 +16,40 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+<<<<<<< HEAD
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3a7c40d-5fc6-4a88-8f12-a75ce0feffba" name="Default Changelist" comment="" />
+=======
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="1778501c-59a9-4bb9-85fe-5f96ccfe556a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/productDetials/productDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+    <list default="true" id="d3a7c40d-5fc6-4a88-8f12-a75ce0feffba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/practice1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practice1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/products/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/products/products.php" afterDir="false" />
+>>>>>>> origin/master
+>>>>>>> b95157819b142e5476a2d88b44bcb3e497721b6c
+    </list>
+>>>>>>> 8eb2d80add6eed733ec7cdc498a15484138bcda2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +60,14 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
@@ -147,7 +179,10 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1hxY832LrIpxf8Ri8YjcqIW5End" />
+  <component name="ProjectId" id="1hxY7ApqdlUO1LnnSCIPIUPtsxQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -158,9 +193,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/routes/products" />
@@ -173,20 +209,40 @@
       <method v="2" />
     </configuration>
   </component>
+<<<<<<< HEAD
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
+=======
+>>>>>>> origin/master
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+>>>>>>> 8eb2d80add6eed733ec7cdc498a15484138bcda2
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d3a7c40d-5fc6-4a88-8f12-a75ce0feffba" name="Default Changelist" comment="" />
-      <created>1600954047160</created>
+      <changelist id="1778501c-59a9-4bb9-85fe-5f96ccfe556a" name="Default Changelist" comment="" />
+      <created>1600954040120</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1600954040120</updated>
+      <workItem from="1600954041170" duration="3666000" />
+      <workItem from="1600957757799" duration="760000" />
+=======
       <updated>1600954047160</updated>
+<<<<<<< HEAD
       <workItem from="1600954048192" duration="1991000" />
       <workItem from="1600958094028" duration="311000" />
       <workItem from="1600958679880" duration="2692000" />
+=======
+      <workItem from="1600954048192" duration="2503000" />
+<<<<<<< HEAD
+      <workItem from="1600956648979" duration="3879000" />
+=======
+      <workItem from="1600956648979" duration="1822000" />
+>>>>>>> origin/master
+>>>>>>> b95157819b142e5476a2d88b44bcb3e497721b6c
+>>>>>>> 8eb2d80add6eed733ec7cdc498a15484138bcda2
     </task>
     <servers />
   </component>
@@ -198,11 +254,35 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="317" width="424" height="486" key="FileChooserDialogImpl" timestamp="1600957755084">
+      <screen x="0" y="38" width="1920" height="1042" />
+    </state>
+    <state x="743" y="317" width="424" height="486" key="FileChooserDialogImpl/0.38.1920.1042@0.38.1920.1042" timestamp="1600957755084" />
+=======
+>>>>>>> origin/master
+>>>>>>> 8eb2d80add6eed733ec7cdc498a15484138bcda2
   </component>
 </project>
