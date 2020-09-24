@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
             'title' => 'Project1',
             'category' => 'PHP PROGRAMMING',
             'description' => 'This is a very simple project',
-            'picture' => 'sample',
+            'picture' => public_path('app/public/sun.jpg'),
         ]);
     }
 }
