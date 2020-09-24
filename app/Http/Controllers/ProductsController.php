@@ -14,7 +14,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $title = products::all();
+        return view('')->withTitle($title['title']);
     }
 
     /**
