@@ -18,7 +18,13 @@ class ProductSeeder extends Seeder
             'title' => 'Project1',
             'category' => 'PHP PROGRAMMING',
             'description' => 'This is a very simple project',
-            'picture' => 'sample',
+            'picture' => storage_path('app/public/sun.jpg'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Omid',
+            'email' => 'Omid@gmail.com',
+            'picture' => storage_path('app/public/sun.jpg'),
         ]);
     }
 }
