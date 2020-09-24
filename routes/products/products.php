@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('products',\App\Http\Controllers\ProductsController::class);
 
-Route::get('/',[\App\Http\Controllers\homepage::class,'index']);
+Route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
 
 //Route::get('/', function () {
 //    return view('welcome');
