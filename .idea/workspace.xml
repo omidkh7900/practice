@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d3a7c40d-5fc6-4a88-8f12-a75ce0feffba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/practice1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practice1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/products/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/products/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +148,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hxY832LrIpxf8Ri8YjcqIW5End" />
@@ -185,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600954047160</updated>
       <workItem from="1600954048192" duration="2503000" />
-      <workItem from="1600956648979" duration="1822000" />
+      <workItem from="1600956648979" duration="3578000" />
     </task>
     <servers />
   </component>
