@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $products =products::all();
+        return view('',['products'=>$products]);
     }
 }

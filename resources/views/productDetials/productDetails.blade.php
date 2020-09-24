@@ -16,11 +16,18 @@
                 </thead>
                 <tbody>
                 @foreach($products as $product)
-                <tr>
-                    <td>{{$product->title}}</td>
-                    <td><a href="">Edit</a></td>
-                    <td><a href="">Delete</a></td>
-                </tr>
+                    <tr>
+                        <td>{{$product->title}}</td>
+                        <td>
+                            <form action="{{route('products.edit')}}" method="get">
+                                <a href="javascript:;">Edit</a></form>
+                        </td>
+                        <td>
+                            <form action="{{route('products.destroy')}}" method="post">
+                                @method('delete')
+                                <a href="">Delete</a></form>
+                        </td>
+                    </tr>
                 @endforeach
                 </tbody>
             </table>
