@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class ProductSeeder extends Seeder
 {
@@ -18,13 +19,13 @@ class ProductSeeder extends Seeder
             'title' => 'Project1',
             'category' => 'PHP PROGRAMMING',
             'description' => 'This is a very simple project',
-            'picture' => 'storage/sun.jpg',
+            'picture' => 'sun.jpg',
         ]);
 
         DB::table('users')->insert([
             'name' => 'Omid',
             'email' => 'Omid@gmail.com',
-            'picture' => 'storage/sun.jpg',
+            'password' => Hash::make('12345678'),
         ]);
     }
 }

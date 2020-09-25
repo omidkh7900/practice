@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\products;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Hash;
+use function GuzzleHttp\Promise\all;
 
 class ProductsController extends Controller
 {
@@ -28,7 +30,7 @@ class ProductsController extends Controller
     {
 //        $product = products::all();
         $product = [];
-        return view('auth.register')->withProduct($product);
+        return view('auth.registerproduct')->withProduct($product);
     }
 
     /**
@@ -51,7 +53,8 @@ class ProductsController extends Controller
      */
     public function show(products $products)
     {
-        return view('productDetails.details')->with('product',$products);
+//        dd($product = $products);
+        return view('productDetials.details',['product' => $products]);
     }
 
     /**
@@ -62,7 +65,7 @@ class ProductsController extends Controller
      */
     public function edit(products $products)
     {
-        return view('auth.register')->withProduct($products);
+        return view('auth.registerproduct')->withProduct($products);
     }
 
     /**
