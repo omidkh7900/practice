@@ -8,14 +8,14 @@
                 <div class="card-header">{{ __('record new product') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="post" action="{{ route('products.store') }}">
                         @csrf
 
 
                             <label for="title" class="col-md-1">{{ __('title') }}</label>
 
                             <div class="col-md-6">
-                                <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ $product->title }}" required autofocus>
+                                <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ $product->title ?? '' }}" required autofocus>
 
                                 @error('title')
                                     <span class="invalid-feedback" role="alert">
@@ -31,7 +31,7 @@
                             <label for="image" class="col-md-3">{{ __('image') }}</label>
 
                             <div class="col-md-6">
-                                <input id="file" type="file" class="form-control @error('email') is-invalid @enderror" name="picture" value="{{ $product->picture }}" required >
+                                <input id="file" type="file"  name="picture" value="{{ $product->picture ?? '' }}" required >
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">

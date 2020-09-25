@@ -26,18 +26,21 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+//        $product = products::all();
+        $product = [];
+        return view('auth.register')->withProduct($product);
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        products::create();
+        products::create($request->all());
+        return redirect()->route('products.create');
     }
 
     /**
