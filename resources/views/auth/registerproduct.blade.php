@@ -8,7 +8,11 @@
                     <div class="card-header">{{ __('record new product') }}</div>
 
                     <div class="card-body">
+                        @if('/products/create'==$_SERVER['REQUEST_URI'])
                         <form method="post" action="{{ route('products.store') }}">
+                            @elseif("/products/$product->id/edit" == $_SERVER['REQUEST_URI'])
+                                <form method="post" action="product/{{$product->id}}">
+                            @endif
                             @csrf
 
 
@@ -23,13 +27,13 @@
                                     </span>
                                 @enderror
                             </div>
-                            
+
                             <br>
                             <br>
                             <br>
 
                             <label for="category" class="col-md-4">{{ __('category') }}</label>
-                            
+
                             <div class="col-md-6">
                               <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" value="{{ $product->category ?? '' }}" required autofocus>
 

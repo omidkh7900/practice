@@ -28,7 +28,6 @@ class ProductsController extends Controller
      */
     public function create()
     {
-//        $product = products::all();
         $product = [];
         return view('auth.registerproduct')->withProduct($product);
     }
@@ -41,6 +40,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request);
         products::create($request->all());
         return redirect()->route('home');
     }
