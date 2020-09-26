@@ -27,11 +27,13 @@
                             <br>
                             <br>
                             <br>
+
+                            <label for="category" class="col-md-4">{{ __('category') }}</label>
                             
                             <div class="col-md-6">
-                              <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ $product->description ?? '' }}" required autofocus>
+                              <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" value="{{ $product->category ?? '' }}" required autofocus>
 
-                              @error('description')
+                              @error('category')
                               <span class="invalid-feedback" role="alert">
                                       <strong>{{ $message }}</strong>
                                   </span>
@@ -42,10 +44,12 @@
                             <br>
                             <br>
 
-                            <div class="col-md-6">
-                              <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" value="{{ $product->category ?? '' }}" required autofocus>
+                            <label for="description" class="col-md-4">{{ __('desciprtion') }}</label>
 
-                              @error('category')
+                            <div class="col-md-6">
+                              <textarea id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ $product->description ?? '' }}" required autofocus></textarea>
+
+                              @error('description')
                               <span class="invalid-feedback" role="alert">
                                       <strong>{{ $message }}</strong>
                                   </span>
