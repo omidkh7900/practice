@@ -13,12 +13,12 @@ class ProductsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
         $title = products::all();
-        return view('products.products')->withTitle($title['title']);
+        return view('productDetails.productDetails',['products'=>$title]);
     }
 
     /**
@@ -54,7 +54,7 @@ class ProductsController extends Controller
     public function show(products $products)
     {
 //        dd($product = $products);
-        return view('productDetials.details',['product' => $products]);
+        return view('productDetails.details',['product' => $products]);
     }
 
     /**

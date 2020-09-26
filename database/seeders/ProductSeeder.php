@@ -19,7 +19,7 @@ class ProductSeeder extends Seeder
             'title' => 'Project1',
             'category' => 'PHP PROGRAMMING',
             'description' => 'This is a very simple project',
-            'picture' => 'sun.jpg',
+            'picture' => 'num1.jpg',
         ]);
 
         DB::table('users')->insert([

@@ -20,12 +20,16 @@
                         <td>{{$product->title}}</td>
                         <td>
                             <form action="{{route('products.edit')}}" method="get">
-                                <a href="javascript:;">Edit</a></form>
+                                @csrf
+                                <input type="hidden" value="edit">
+                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Edit</a></form>
                         </td>
                         <td>
                             <form action="{{route('products.destroy')}}" method="post">
+                                @csrf
                                 @method('delete')
-                                <a href="">Delete</a></form>
+                                <input type="hidden" value="delete">
+                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Delete</a></form>
                         </td>
                     </tr>
                 @endforeach
