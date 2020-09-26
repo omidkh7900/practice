@@ -42,7 +42,7 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         products::create($request->all());
-        return redirect()->route('products.create');
+        return redirect()->route('home');
     }
 
     /**

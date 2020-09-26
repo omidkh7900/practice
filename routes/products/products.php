@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('products',\App\Http\Controllers\ProductsController::class);
+Route::resource('products',\App\Http\Controllers\ProductsController::class)->middleware('auth');
 
 \Illuminate\Support\Facades\Auth::routes();
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('home');

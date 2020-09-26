@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="col-md-12">
-            <button type="button" class="btn btn-outline-primary btn-block">Create new product</button>
+            <button style="background: #f8fafc" type="button" class="btn btn-outline-primary btn-block"><a href="{{route('products.create')}}">Create new product</a></button>
         </div>
         <div class="col-md-12">
             <table class="table table-borderless">
@@ -22,7 +22,7 @@
                             <form action="/products/{{$product->id}}/edit" method="get">
                                 @csrf
                                 <input type="hidden" value="edit">
-                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Edit</a>
+                                <a href="/products/{{$product->id}}/edit">Edit</a>
                             </form>
                         </td>
                         <td>
@@ -30,7 +30,7 @@
                                 @csrf
                                 @method('delete')
                                 <input type="hidden" value="delete">
-                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Delete</a>
+                                <a href="javascript:;" onclick="if(confirm('Are you sure to delete??')){$(this).closest('form').submit()}">Delete</a>
                             </form>
                         </td>
                     </tr>
