@@ -23,6 +23,34 @@
                                     </span>
                                 @enderror
                             </div>
+                            
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <div class="col-md-6">
+                              <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ $product->description ?? '' }}" required autofocus>
+
+                              @error('description')
+                              <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                          </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <div class="col-md-6">
+                              <input id="category" type="text" class="form-control @error('category') is-invalid @enderror" name="category" value="{{ $product->category ?? '' }}" required autofocus>
+
+                              @error('category')
+                              <span class="invalid-feedback" role="alert">
+                                      <strong>{{ $message }}</strong>
+                                  </span>
+                              @enderror
+                            </div>
 
                             <br>
                             <br>
