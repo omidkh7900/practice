@@ -17,8 +17,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $title = products::all();
-        return view('productDetails.productDetails',['products'=>$title]);
+        $products = products::all();
+        return view('productDetails.productDetails')->withProducts($products);
     }
 
     /**
@@ -48,48 +48,47 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\products  $product
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function show(products $products)
+    public function show(products $product)
     {
-//        dd($product = $products);
-        return view('productDetails.details',['product' => $products]);
+        return view('productDetails.details',['product' => $product]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\products  $product
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit(products $products)
+    public function edit(products $product)
     {
-        return view('auth.registerproduct')->withProduct($products);
+        return view('auth.registerproduct')->withProduct($product);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\products  $product
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, products $product)
     {
-        $products->update($request->all());
+        $product->update($request->all());
         return redirect()->route('products.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\products  $products
+     * @param  \App\Models\products  $product
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(products $products)
+    public function destroy(products $product)
     {
-        $products->delete();
+        $product->delete();
         return redirect()->route('home');
     }
 }

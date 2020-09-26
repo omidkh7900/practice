@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::resource('products',\App\Http\Controllers\ProductsController::class);
 
 \Illuminate\Support\Facades\Auth::routes();
-//Route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
-Route::get('/',function (){
-   return view('welcome');
-});
+Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('home');
+//Route::get('/',function (){
+//   return view('welcome');
+//});
 
-Route::get('/home',[\App\Http\Controllers\HomeController::class,'index']);
+Route::get('/home',[\App\Http\Controllers\HomeController::class,'index'])->name('home');
 
 //Route::get('/', function () {
 //    return view('welcome');

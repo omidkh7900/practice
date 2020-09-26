@@ -19,17 +19,19 @@
                     <tr>
                         <td>{{$product->title}}</td>
                         <td>
-                            <form action="{{route('products.edit')}}" method="get">
+                            <form action="/products/{{$product->id}}/edit" method="get">
                                 @csrf
                                 <input type="hidden" value="edit">
-                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Edit</a></form>
+                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Edit</a>
+                            </form>
                         </td>
                         <td>
-                            <form action="{{route('products.destroy')}}" method="post">
+                            <form action="/products/{{$product->id}}" method="post">
                                 @csrf
                                 @method('delete')
                                 <input type="hidden" value="delete">
-                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Delete</a></form>
+                                <a href="javascript:;" onclick="if(confirm('hi')){$(this).closest('form').submit()}">Delete</a>
+                            </form>
                         </td>
                     </tr>
                 @endforeach
