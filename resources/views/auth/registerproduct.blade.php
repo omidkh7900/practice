@@ -11,7 +11,8 @@
                         @if('/products/create'==$_SERVER['REQUEST_URI'])
                         <form method="post" action="{{ route('products.store') }}">
                             @elseif("/products/$product->id/edit" == $_SERVER['REQUEST_URI'])
-                                <form method="post" action="product/{{$product->id}}">
+                                <form method="post" action="/products/{{$product->id}}">
+                                    @method('PUT')
                             @endif
                             @csrf
 
