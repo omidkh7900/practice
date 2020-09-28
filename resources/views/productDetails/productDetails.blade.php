@@ -10,7 +10,7 @@
                 <thead>
                 <tr>
                     <th scope="col">Title</th>
-                    <th scope="col">+Viewed</th>
+                    <th scope="col">+views</th>
                     <th scope="col">Actions</th>
                 </tr>
                 </thead>

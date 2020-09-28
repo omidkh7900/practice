@@ -9,9 +9,9 @@
 
                     <div class="card-body">
                         @if('/products/create'==$_SERVER['REQUEST_URI'])
-                        <form method="post" action="{{ route('products.store') }}">
+                        <form method="post" action="{{ route('products.store') }}" enctype="multipart/form-data">
                             @elseif("/products/$product->id/edit" == $_SERVER['REQUEST_URI'])
-                                <form method="post" action="/products/{{$product->id}}">
+                                <form method="post" action="/products/{{$product->id}}" enctype="multipart/form-data">
                                     @method('PUT')
                             @endif
                             @csrf
@@ -68,9 +68,9 @@
                             <label for="image" class="col-md-3">{{ __('image') }}</label>
 
                             <div class="col-md-6">
-                                <input id="file" type="file"  name="picture" value="{{ $product->picture ?? '' }}" required >
+                                <input id="file" type="file"  name="picture" required >
 
-                                @error('email')
+                                @error('picture')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

@@ -6,6 +6,7 @@ use App\Models\products;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use function GuzzleHttp\Promise\all;
 
 class ProductsController extends Controller
@@ -18,7 +19,7 @@ class ProductsController extends Controller
     public function index()
     {
         $products = products::all();
-        return view('productDetails.productDetails')->withProducts($products);
+        return view('productDetails.productDetails')->withProducts($products)->withViews(23);
     }
 
     /**
@@ -35,11 +36,12 @@ class ProductsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
+        $path = $request->file('picture')->storeAs('images',$request->file('picture')->getClientOriginalName());
         products::create($request->all());
         return redirect()->route('home');
     }
@@ -47,18 +49,18 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\products  $product
+     * @param \App\Models\products $product
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show(products $product)
     {
-        return view('productDetails.details',['product' => $product]);
+        return view('productDetails.details', ['product' => $product]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\products  $product
+     * @param \App\Models\products $product
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit(products $product)
@@ -69,8 +71,8 @@ class ProductsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\products  $product
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\products $product
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, products $product)
@@ -82,7 +84,7 @@ class ProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\products  $product
+     * @param \App\Models\products $product
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(products $product)
